@@ -19,6 +19,7 @@ class CreateUsers extends Migration {
 			$table->string('password');
 			$table->string('email',50);
 			$table->enum('type',['Admin','Leader','Integrant','Client']);
+			$table->rememberToken();
 			$table->timestamps();
 		});
 	}

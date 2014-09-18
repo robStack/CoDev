@@ -13,6 +13,8 @@
 
 Route::get('/', function(){	return View::make('login'); });
 
-Route::get('login', function(){ return View::make('login'); });
+Route::get('users/login', function(){ return View::make('login'); });
 
-Route::get('register', function(){ return View::make('register'); });
+Route::get('users/register', function(){ return View::make('register'); });
+
+Route::controller('users', 'UsersController');
